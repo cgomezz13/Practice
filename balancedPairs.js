@@ -41,12 +41,3 @@ function isBalancedRec(string, pairs, stack = []) {
   // if stack is empty, return true, else return false
   return stack.length === 0;
 }
-
-// return false
-console.log(
-  isBalancedRec("{}{b[(!{)}]}(b)!", { "(": ")", "[": "]", "{": "}" })
-);
-console.log(isBalanced("{}{b[(!{)}]}(b)!", { "(": ")", "[": "]", "{": "}" }));
-// return true
-console.log(isBalancedRec("{a}()a[{}]", { "(": ")", "[": "]", "{": "}" }));
-console.log(isBalanced("a{}()[{a}]", { "(": ")", "[": "]", "{": "}" }));
